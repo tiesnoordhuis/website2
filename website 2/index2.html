@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ties Noordhuis</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background-color: #E0F8F8;">
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+				<a class="navbar-brand" href="#">
+					<img alt="Brand" src="css/Logo.jpg">
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home <span class="sr-only">(current)</span></a></li>
+				<li><a href="#Galerij" aria-controls="Galerij" role="tab" data-toggle="tab">Galerij</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projecten <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#web1" aria-controls="web1" role="tab" data-toggle="tab">website 1</a></li>
+					<li><a href="#web2" aria-controls="web2" role="tab" data-toggle="tab">website 2</a></li>
+					<li><a href="#web3" aria-controls="web3" role="tab" data-toggle="tab">website 3</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#blog" aria-controls="blog" role="tab" data-toggle="tab">blog</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#video" aria-controls="video" role="tab" data-toggle="tab">video</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <form class="navbar-form navbar-right">
+				<div class="form-group">
+				  <input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-default">GO</button>
+			  </form>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+	<div class="container-fluid">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8">
+	  <div class="tab-content">
+		<div role="tabpanel" class="tab-pane active" id="home">home home home</div>
+		<div role="tabpanel" class="tab-pane" id="Galerij">
+			<div class="container-fluid" >
+				Galerij
+					<div class="btn-group" role="group" aria-label="..." style="float:right;">
+					<button type="button" class="btn btn-default" onclick="galerijLijst()">lijst</button>
+					<button type="button" class="btn btn-default" onclick="getImgPad()">Grid</button>
+					</div>
+				</br>
+				</br>	
+					<div id="GalerijWeergave">
+						<div class="col-md-3"><button type="button" class="btn btn-default" onclick="galerijLinks()" style="float:right;">
+						links</button></div>
+						<div class="col-md-6">
+							<img src="Galerij/plaatje1.jpg" id="plaatjeFrame"></img>
+							<div id="testGalerij"></div>
+						</div>
+						<div class="col-md-3"><button type="button" class="btn btn-default" onclick="galerijRechts()" style="float:left;">
+						rechts</button></div>
+					</div>
+			</div>
+		</div>
+		<div role="tabpanel" class="tab-pane" id="web1">website 1</div>
+		<div role="tabpanel" class="tab-pane" id="web2">website 2</div>
+		<div role="tabpanel" class="tab-pane" id="web3">website 3</div>
+		<div role="tabpanel" class="tab-pane" id="blog">
+			<div id="lipsum">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis magna et magna interdum pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris in accumsan nisl, quis rutrum mi. Quisque dignissim augue ac suscipit vulputate. Curabitur ut libero cursus, varius ligula quis, suscipit metus. Sed pretium nisl sem, et tempus felis vehicula at. Phasellus sit amet velit nec nunc consequat ullamcorper ut non nibh. Cras bibendum dapibus laoreet. Nulla enim neque, efficitur at varius nec, volutpat eget nibh. Nunc ante nisl, rhoncus posuere ipsum non, aliquam feugiat diam. Curabitur fermentum nulla sit amet risus posuere, nec interdum mi euismod. Sed vehicula, est vel ultrices efficitur, neque nisi auctor quam, a vehicula ante dui porta libero. Etiam vel consequat orci, sed finibus diam. Aenean sed efficitur tortor. Nulla vitae fringilla nunc. In hac habitasse platea dictumst.
+				</p>
+				<p>
+				Morbi eget purus lectus. Nunc tempor faucibus erat nec pretium. Aliquam molestie fermentum nulla. Fusce odio neque, egestas ac auctor eget, auctor eget risus. Cras pellentesque justo dapibus hendrerit tempor. Fusce at luctus massa. Curabitur imperdiet enim eget laoreet efficitur. Etiam efficitur suscipit ex, ac consectetur purus. Integer eu dui id erat sodales luctus nec ac turpis. Proin sagittis euismod aliquet. Curabitur cursus quis eros eget eleifend. Morbi nec eros risus. Nam et efficitur nisi, sit amet sollicitudin elit. Integer sagittis porta tempus.
+				</p>
+				<p>
+				Nullam rutrum libero nec fermentum efficitur. Donec orci dolor, mollis eu eros sed, feugiat accumsan quam. Donec nisi mauris, placerat at porttitor dictum, vestibulum sed risus. Mauris quis sapien libero. Vivamus mattis tortor massa, et tempus libero pellentesque ut. Integer at consectetur odio. Vestibulum sit amet felis et massa scelerisque congue ut id mi. Nulla sed fringilla enim, in vestibulum nisi. Praesent a dui maximus, tincidunt nunc non, blandit odio. In hac habitasse platea dictumst. Integer nibh tellus, ullamcorper non lacus nec, gravida venenatis justo.
+				</p>
+				<p>
+				Nullam quis ipsum luctus, tincidunt magna vel, consectetur sapien. Aenean magna dolor, vestibulum sed nibh quis, gravida lobortis lacus. Vestibulum congue dui est, et pulvinar arcu dapibus id. Pellentesque vehicula id orci vel sollicitudin. Quisque tincidunt scelerisque dignissim. Sed tincidunt finibus diam, ac tincidunt sapien. Etiam ac diam nec lacus pulvinar cursus. Quisque viverra non libero eget mollis. Donec sollicitudin libero nec lorem sodales pharetra. Mauris libero ipsum, ullamcorper in suscipit eget, pretium ac ex. Sed commodo sodales fringilla. Quisque mollis auctor velit, non vulputate ante suscipit in. Curabitur diam nulla, lacinia eu lectus vitae, accumsan placerat nisi.
+				</p>
+				<p>
+				Suspendisse sodales ipsum id pharetra tristique. Aliquam id nulla ipsum. Aliquam lobortis rhoncus tellus, vitae ultrices velit venenatis ut. Morbi urna nisi, egestas et elit quis, efficitur faucibus neque. Mauris porttitor eu est vel sagittis. Fusce pulvinar egestas auctor. Quisque lectus diam, condimentum sed consequat eu, posuere at ex.
+				</p>
+				<p>
+				Integer non velit in magna feugiat iaculis ut id mauris. Fusce volutpat gravida dolor a tincidunt. Nullam luctus vehicula fringilla. Vivamus lacinia commodo arcu quis tempor. Nam fermentum in augue at pretium. Nulla est nibh, lobortis non felis vitae, iaculis dapibus elit. Curabitur in sapien dapibus, accumsan felis at, luctus ex. In nibh sapien, consectetur ac elit id, semper ullamcorper justo. Donec tincidunt ultrices elit ac blandit. Proin ullamcorper nisl ut sollicitudin tincidunt. Suspendisse aliquet sed odio ut pharetra. Donec faucibus nisl in lorem tincidunt tincidunt.
+				</p>
+				<p>
+				Vivamus sem diam, pellentesque eget risus vel, vehicula dapibus massa. Donec orci ex, elementum eu laoreet non, laoreet non arcu. Aenean pretium, tellus vel ornare rutrum, est massa varius magna, non suscipit diam nunc semper turpis. Fusce velit justo, consectetur id odio sit amet, blandit aliquam orci. Nullam efficitur varius massa a commodo. Quisque ac lobortis lorem. Cras vestibulum velit eget augue convallis elementum. Aliquam eu arcu commodo, laoreet magna non, rhoncus lorem. Mauris placerat, est ut varius eleifend, ipsum ex sodales elit, sed tincidunt leo tellus sed lacus.
+				</p>
+				<p>
+				Integer bibendum nec arcu vel lacinia. Proin viverra mollis velit ac sollicitudin. Morbi ipsum turpis, iaculis viverra sollicitudin non, sollicitudin ut quam. Cras sed tincidunt leo. Mauris eget pharetra felis. Pellentesque malesuada tempus condimentum. Curabitur diam odio, eleifend ut posuere ac, tempor eu ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. In egestas velit sit amet ante aliquam egestas. Fusce nulla quam, egestas eget odio eu, sollicitudin egestas augue. Donec eget sem congue, faucibus tortor in, tempor ipsum. Curabitur eget orci non lectus tristique viverra. Phasellus aliquet aliquam leo eu vestibulum.
+				</p>
+				<p>
+				Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis sed sapien elit. Suspendisse bibendum, arcu nec tincidunt dapibus, nisi diam euismod mi, id convallis metus dolor in tortor. Cras consectetur nisi neque, vitae semper arcu ultrices sit amet. Nullam vel nisi dui. Pellentesque vestibulum quis magna vel dapibus. Aliquam viverra nisi vel tincidunt fermentum. Vivamus in ipsum at elit efficitur dapibus ac nec sem. Suspendisse iaculis massa nec massa efficitur gravida. Nam libero erat, consequat nec convallis in, rutrum vitae dolor. Integer ac felis quis nibh mattis sollicitudin. Sed lorem dui, fringilla cursus odio at, accumsan vulputate elit. Curabitur eleifend congue purus, quis blandit dolor euismod euismod. Duis dictum eget nibh non elementum. Duis nisl turpis, ultrices nec ullamcorper sed, vestibulum in elit.
+				</p>
+				<p>
+				Fusce hendrerit pellentesque luctus. Ut elit enim, laoreet at dignissim vitae, venenatis sit amet mauris. Aenean porttitor efficitur nulla, non malesuada urna egestas nec. Etiam eget augue eget augue ullamcorper euismod id vitae enim. Fusce efficitur accumsan nisi. Suspendisse massa nunc, cursus a ex a, porttitor finibus velit. Integer commodo mollis mauris et pellentesque. Cras cursus rhoncus tortor, eget interdum massa. Duis eget est at justo efficitur sagittis eget eu lorem. Donec condimentum mattis finibus. Vivamus in tincidunt ex.
+				</p>
+				<p>
+				Sed imperdiet, velit et fermentum mollis, ipsum leo pulvinar turpis, non rutrum purus felis nec magna. Fusce consequat molestie dignissim. In dui lorem, dignissim ut eros tempus, condimentum dictum urna. Suspendisse viverra, nibh vel vestibulum iaculis, metus justo rutrum nulla, mattis feugiat felis odio eu purus. Maecenas auctor auctor faucibus. Donec eu orci in magna accumsan interdum quis eu mauris. Maecenas tincidunt ligula vitae tellus congue consectetur sit amet quis nibh. Aenean tristique libero ac nisl bibendum, non fermentum diam fermentum. Fusce sodales leo sagittis enim aliquam, et pulvinar quam euismod. Proin sagittis, mauris molestie interdum aliquam, justo purus sollicitudin neque, vel bibendum ante mauris ut tortor. Ut accumsan diam vel augue finibus, et efficitur urna suscipit. Aenean bibendum mauris et nulla iaculis, a tincidunt diam rhoncus. Curabitur condimentum pretium lacinia. Vivamus sodales ipsum id ante placerat lobortis. Duis at auctor tortor.
+				</p>
+				<p>
+				Morbi commodo magna a vestibulum elementum. Praesent nulla enim, tincidunt vel purus ut, luctus placerat ligula. Duis tincidunt nulla in nisl condimentum, et hendrerit augue venenatis. Pellentesque eget lacus pretium, interdum libero non, porttitor justo. In dapibus in lacus sed maximus. Nunc scelerisque at lectus sed finibus. Nam tempor justo et nunc aliquam, sit amet finibus lorem venenatis. Proin eget ultrices lectus. Proin vel est turpis. Duis tincidunt fermentum diam, non mollis nulla porttitor sed. Proin accumsan consectetur nisi quis ullamcorper. Aenean ut lectus vel ipsum condimentum accumsan ut nec dolor. Phasellus et turpis et lectus commodo lacinia.
+				</p>
+				<p>
+				Sed lectus nulla, dapibus vitae massa in, rhoncus congue magna. Nunc iaculis rhoncus felis sed rhoncus. Phasellus a nunc id mi ultrices dictum nec vel quam. Quisque facilisis arcu eget ligula auctor, sit amet vestibulum eros accumsan. Nam tristique odio nec mauris maximus aliquam. Nullam id mollis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla viverra consequat tortor at maximus. Duis elementum est nec tristique sollicitudin. Donec convallis metus odio, a tincidunt enim tincidunt sed. Sed gravida, nisl quis vestibulum egestas, velit ex lacinia erat, a molestie diam nisi in elit. Curabitur rutrum hendrerit purus non dictum. Vivamus fermentum ornare sapien in ullamcorper.
+				</p>
+				<p>
+				Duis et dolor sed nisl posuere elementum. Morbi faucibus ante ipsum, vel hendrerit tortor mollis ac. Nullam ultrices ante lorem, id sagittis magna varius tempor. Morbi vel consequat diam, a accumsan augue. Aliquam tempor eget nisi vitae bibendum. Proin porttitor quis risus a tincidunt. Integer non accumsan velit. Etiam non metus aliquet, luctus nunc at, bibendum metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In congue enim quis fringilla egestas. Etiam eu dolor dapibus dui ultrices pretium vel eget libero. Aenean quam justo, consequat et ante et, cursus varius risus.
+				</p>
+				<p>
+				Pellentesque eget nisi ut orci maximus sodales. Aliquam sed semper leo. Cras scelerisque sem sit amet eros viverra dapibus. Integer luctus, sem a maximus finibus, neque felis posuere nisl, eu viverra massa enim in dolor. Morbi eget ipsum ullamcorper, semper nisl nec, facilisis velit. Nunc sit amet justo sem. Maecenas pretium sem sed interdum elementum. Pellentesque eget elementum erat, feugiat suscipit diam. Maecenas ipsum ex, rhoncus sit amet dui non, placerat pellentesque nunc.
+				</p>
+				<p>
+				Sed vel aliquam dui, eu fringilla odio. Nunc convallis consequat ex sed tempus. Sed tempor est ut dolor facilisis viverra. In convallis magna lectus, tristique luctus nisl mattis at. Fusce eget metus justo. Nam condimentum semper quam non egestas. Quisque at venenatis arcu. Quisque laoreet leo et justo pretium vulputate. Quisque lacus mauris, elementum in arcu a, imperdiet sollicitudin mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam enim leo, auctor maximus condimentum eget, interdum non nisi. Phasellus eu fringilla augue, sit amet hendrerit tortor. Nunc accumsan quam eu nunc vestibulum, et porta ante consequat. Cras pellentesque faucibus iaculis. Nulla ullamcorper sagittis facilisis. Proin tincidunt, libero vel rutrum dictum, mi nisl sollicitudin orci, ac pellentesque nunc ex a neque.
+				</p>
+				<p>
+				Integer tincidunt mi diam, in semper enim varius ut. Mauris tincidunt finibus tortor, sit amet interdum sapien faucibus ac. Morbi feugiat aliquet leo, non fringilla orci mattis sit amet. Ut semper, ex ac finibus varius, nulla orci tincidunt lacus, at malesuada orci purus sed ex. Etiam vitae ligula a velit tempor congue vitae nec orci. Integer id maximus nunc, sit amet maximus lacus. Pellentesque tempus, purus eu venenatis faucibus, mi nisl consequat lorem, vel laoreet augue orci et elit. Nunc rutrum ex a neque rutrum sollicitudin. Mauris mattis faucibus risus vel cursus.
+				</p>
+				<p>
+				Integer rutrum feugiat est, ut molestie risus finibus eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ultricies neque et felis tincidunt, vel tincidunt turpis accumsan. Integer a lorem risus. Nunc ut mattis lorem, ut luctus nulla. Aliquam erat volutpat. Praesent consectetur ipsum ac nunc maximus sollicitudin. Phasellus ultrices lorem tincidunt diam commodo fermentum. Maecenas consectetur ullamcorper quam, bibendum viverra justo aliquam in. Nulla facilisi.
+				</p>
+				<p>
+				Fusce leo dolor, venenatis id nisi posuere, gravida efficitur risus. Proin condimentum ut arcu vestibulum hendrerit. Cras elementum, purus ut efficitur aliquet, felis justo porttitor ipsum, ac tempus tortor leo at dui. Aliquam eget tincidunt odio, in blandit justo. Vestibulum sit amet nisi nec risus consequat ultricies. Nullam vestibulum odio id diam cursus maximus. Curabitur ultrices posuere erat. Mauris non orci sit amet nunc placerat efficitur quis id lacus. Vestibulum convallis ac orci ac rutrum. Pellentesque aliquam finibus libero quis egestas. Quisque facilisis diam nec dignissim tempor. In ut imperdiet mauris, ac maximus quam. Sed non arcu maximus, cursus nibh in, facilisis lacus. Phasellus ut tincidunt lorem, et aliquet lorem. Curabitur urna nulla, pulvinar sit amet dictum quis, placerat non dui.
+				</p>
+				<p>
+				Proin ut nisi ac dui porttitor tempus ac a neque. Donec vel posuere tortor. Suspendisse auctor arcu a finibus dictum. In lectus ligula, volutpat ac tellus eget, cursus maximus diam. Duis quam tellus, molestie eget placerat vel, rutrum vitae felis. Nam scelerisque, orci nec sollicitudin tincidunt, mi urna tristique ex, at mollis nisl ligula ac leo. Phasellus eleifend interdum nibh, in volutpat erat volutpat a. Suspendisse potenti. Nulla metus nibh, consequat et facilisis ut, egestas eget lorem. Phasellus ac bibendum leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam suscipit nibh nisi, a congue diam viverra sed. Maecenas eget sapien diam. Pellentesque faucibus non odio quis accumsan. Nunc tristique, magna at efficitur venenatis, ipsum ex faucibus ex, quis dictum lorem massa et libero. Nunc efficitur ac leo at elementum.
+				</p></div>
+		<div role="tabpanel" class="tab-pane" id="video">video</div>
+	  </div>
+	  </div>
+	  </div>
+	  </div>
+		
+		
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+	<script src="js/codeties.js"></script
+  </body>
+</html>
