@@ -1,3 +1,3 @@
-# website2
+# website voor eigen raspberry pi
+
 test website
-oefening voor het gebruik van javascript, voornamelijk om een image gallery te maken
