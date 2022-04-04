@@ -1,5 +1,7 @@
 <?php
 
+require "connection.php";
+
 if (
     (isset($_POST['username']) && !empty($_POST['username'])) && 
     (isset($_POST['password']) && !empty($_POST['password']))
@@ -14,19 +16,19 @@ if (
 $username ??= '';
 $password ??= '';
 
-include "connection.php";
 
 try {
     $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE username = :username");
     $stmt->bindParam(':username', $username, PDO::PARAM_STR);
     $stmt->execute();
+    $stmt->debugDumpParams();
     $user = $stmt->fetch();
 } catch (PDOException $e) {
-    error_log("PDOException: {$e->getCode()} {$e->getMessage()}", 3, '../log/error.log');
+    error_log("PDOException: {$e->getCode()} {$e->getMessage()}", 3, dirname(__DIR__) . '/log/error.log');
     header('Location: login.php?error=db');
     exit((int) $e->getCode());
 }
-if (password_verify($password, $user->password)) {
+if ($user !== false && password_verify($password, $user->password)) {
     session_start();
     session_regenerate_id(true);
     $_SESSION['user'] = $user->id;

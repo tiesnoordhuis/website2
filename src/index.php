@@ -1,16 +1,15 @@
 <?php
 
+require_once 'connection.php';
 session_start();
 if (isset($_SESSION['user'])) {
-    require_once 'connection.php';
-
     try {
         $stmt = $conn->prepare("SELECT username FROM users WHERE id = :id");
         $stmt->bindParam(':id', $_SESSION['user'], PDO::PARAM_INT);
         $stmt->execute();
         $user = $stmt->fetch();
     } catch (PDOException $e) {
-        error_log("PDOException: {$e->getCode()} {$e->getMessage()}", 3, '../log/error.log');
+        error_log("PDOException: {$e->getCode()} {$e->getMessage()}", 3, dirname(__DIR__) . '/log/error.log');
         header('Location: login.php?error=db');
         exit((int) $e->getCode());
     }
@@ -26,7 +25,7 @@ if (isset($_SESSION['user'])) {
 </head>
 <body>
     <?php if (isset($_SESSION['user'])) { ?>
-        <h1>Hallo <?= {$user->username} ?></h1>
+        <h1>Hallo <?= $user->username ?></h1>
     <?php } else { ?>
         <h1>Hallo Gast</h1>
     <?php } ?>

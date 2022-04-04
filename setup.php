@@ -8,14 +8,14 @@ if (count($argv) < 3 or !isset($argv[1]) or !isset($argv[2])) {
 }
 
 $username = htmlspecialchars(strip_tags($argv[1]), ENT_QUOTES | ENT_HTML5 | ENT_DISALLOWED);
-$password = htmlspecialchars(strip_tags($argv[1]), ENT_QUOTES | ENT_HTML5 | ENT_DISALLOWED);
+$password = htmlspecialchars(strip_tags($argv[2]), ENT_QUOTES | ENT_HTML5 | ENT_DISALLOWED);
 
 if (strlen($username) < 4) {
-    echo "Username is too short" . PHP_EOL;
+    echo "Username [$username] is too short" . PHP_EOL;
     exit;
 }
 if (strlen($password) < 8) {
-    echo "Password is too short" . PHP_EOL;
+    echo "Password [$password] is too short" . PHP_EOL;
     exit;
 }
 

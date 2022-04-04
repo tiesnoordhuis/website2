@@ -1,11 +1,11 @@
 <?php
 
-require '../vendor/autoload.php';
+require dirname(__DIR__) . '/vendor/autoload.php';
 
 use Symfony\Component\Dotenv\Dotenv;
 
 $dotenv = new Dotenv();
-$dotenv->load('../.env');
+$dotenv->load(dirname(__DIR__) . '/.env');
 
 $hostname = $_ENV['DB_HOST'];
 $username = $_ENV['DB_USER'];
@@ -20,6 +20,6 @@ $options = [
 try {
     $conn = new PDO($dsn, $username, $password, $options);
 } catch (\PDOException $e) {
-    error_log("PDOException: {$e->getCode()} {$e->getMessage()}", 3, '../log/error.log');
+    error_log("PDOException: {$e->getCode()} {$e->getMessage()}", 3, dirname(__DIR__) . '/log/error.log');
     exit((int) $e->getCode());
 }
