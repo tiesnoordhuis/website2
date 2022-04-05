@@ -36,9 +36,9 @@ if (isset($_GET['error'])) {
     <?php } ?>
     <form action="login_handler.php" method="post">
         <label for="username">Gebruikersnaam</label>
-        <input type="text" name="username" id="username">
+        <input type="text" name="username" id="username" required>
         <label for="password">Wachtwoord</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" required>
         <input type="submit" value="Login">
     </form>
 </body>

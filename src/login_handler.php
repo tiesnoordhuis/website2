@@ -13,10 +13,6 @@ if (
     exit;
 }
 
-$username ??= '';
-$password ??= '';
-
-
 try {
     $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE username = :username");
     $stmt->bindParam(':username', $username, PDO::PARAM_STR);

@@ -42,3 +42,5 @@ try {
     error_log("PDOException: {$e->getCode()} {$e->getMessage()}", 3, 'log/error.log');
     exit((int) $e->getCode());
 }
+
+echo "Succesfully created user [$username]" . PHP_EOL;
