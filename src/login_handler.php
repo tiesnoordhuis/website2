@@ -20,7 +20,7 @@ try {
     $stmt->debugDumpParams();
     $user = $stmt->fetch();
 } catch (PDOException $e) {
-    error_log("PDOException: {$e->getCode()} {$e->getMessage()}", 3, dirname(__DIR__) . '/log/error.log');
+    error_log("PDOException: {$e->getCode()} {$e->getMessage()}", 3, $_ENV['LOG_FILE_LOCATION']);
     header('Location: login.php?error=db');
     exit((int) $e->getCode());
 }
